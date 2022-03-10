@@ -15,7 +15,7 @@ the Docker image using: `-v $HOST_FOLDER:$DOCKER_FOLDER`, for example:
 
 ```
 # $MAPPERS_DOCKER_REPO is the root of this repo on your machine, for example '~/Projects/mappers-docker'
-docker run -v $MAPPERS_DOCKER_REPO/mappings:/mappings -v $MAPPERS_DOCKER_REPO/data:/data kg-construct/rmlmapper-java:v4.15.0 java -jar rmlmapper/rmlmapper.jar -m /mappings/mapping.ttl -v
+docker run -v $MAPPERS_DOCKER_REPO/mappings:/mappings -v $MAPPERS_DOCKER_REPO/data:/data kg-construct/rmlmapper-java:v$VERSION java -jar rmlmapper/rmlmapper.jar -m /mappings/mapping.rml.ttl -v
 ```
 
 # Troubleshooting
