@@ -16,15 +16,10 @@ docker build -t kg-construct/rmlmapper-java:v$VERSION .
 
 ## Executing mappings
 
-Several folders are available for executing mappings:
-
-- `/data`: all input data for the mapping rules.
-- `/mappings`: mapping rules to execute.
-- `/results`: for benchmarks, results can be stored here.
-- `/configs`: if applicable, the engine configuration file(s).
-
 Execution command:
 
 ```
 docker run kg-construct/rmlmapper-java:v4.15.0 java -jar rmlmapper/rmlmapper.jar -m $MAPPING_FILE
 ```
+
+Use `--help` to see a list of options of the RMLMapper.
