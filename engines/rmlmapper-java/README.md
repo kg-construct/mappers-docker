@@ -19,7 +19,7 @@ docker build -t kg-construct/rmlmapper-java:v$VERSION .
 Execution command:
 
 ```
-docker run kg-construct/rmlmapper-java:v4.15.0 java -jar rmlmapper/rmlmapper.jar -m $MAPPING_FILE
+docker run kg-construct/rmlmapper-java:v$VERSION java -jar rmlmapper/rmlmapper.jar -m $MAPPING_FILE
 ```
 
 Use `--help` to see a list of options of the RMLMapper.
