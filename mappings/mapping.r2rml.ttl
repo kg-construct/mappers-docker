@@ -11,11 +11,11 @@
   a rr:TriplesMap;
     
   rr:logicalTable [ 
-    rr:tableName "student";
+    rr:tableName "STUDENT";
   ];
 
   rr:subjectMap [ 
-    rr:template "http://example.com/{Name}";
+    rr:template "http://example.com/{NAME}";
     rr:termType rr:IRI;
     rr:class <http://xmlns.com/foaf/0.1/Person> ;
   ];
@@ -23,8 +23,7 @@
   rr:predicateObjectMap [ 
     rr:predicateMap [ rr:constant <http://xmlns.com/foaf/0.1/name> ]; 
     rr:objectMap [
-      rr:column "name";
+      rr:column "NAME";
       rr:termType rr:Literal;
     ]
   ].
-									
