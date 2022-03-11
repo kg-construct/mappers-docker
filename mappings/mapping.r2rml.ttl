@@ -17,7 +17,6 @@
   rr:subjectMap [ 
     rr:template "http://example.com/{NAME}";
     rr:termType rr:IRI;
-    rr:class <http://xmlns.com/foaf/0.1/Person> ;
   ];
 	
   rr:predicateObjectMap [ 
