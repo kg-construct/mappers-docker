@@ -19,7 +19,7 @@ docker build -t kg-construct/morph-rdb:v$VERSION .
 Execution command:
 
 ```
-docker run kg-construct/morph-rdb:v$VERSION java -jar morph-rdb/morph-rdb.jar ???
+docker run kg-construct/morph-rdb:v$VERSION java -cp /morph-rdb/morph-rdb.jar:/morph-rdb/dependency/* es.upm.fi.dia.oeg.morph.r2rml.rdb.engine.MorphCSVRunner /data morph-rdb.properties
 ```
 
 Use `--help` to see a list of options of the Morph-RDB.
